@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="./output.css">
+    <title>CodeKids</title>
+</head>
+
+<body>
+    <!-- Start of Navigation section -->
+    <div class="container mx-auto">
+        <div class="flex justify-between items-center lg:ml-10 lg:mr-16 mx-6 mt-4">
+            <div class="flex items-center justify-between w-full lg:w-fit">
+                <img src="./images/navigation__logo-image.svg" alt="Logo image">
+                <i class="fa-solid fa-bars lg:hidden text-lg text-[#f4961d]"></i>
+            </div>
+            <div class="list-none hidden lg:flex items-center gap-10">
+                <li class="relative">
+                    <img src="./images/navigation__link-background__image.svg" alt="Link background image">
+                    <a class="absolute top-[10px] navigation-link text-black" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="navigation-link" href="#">Homeschool</a>
+                </li>
+                <li>
+                    <a class="navigation-link" href="#">Pricing</a>
+                </li>
+                <li>
+                    <a class="navigation-link" href="#">FAQs</a>
+                </li>
+                <li>
+                    <a class="navigation-link" href="#">Contact</a>
+                </li>
+                <li>
+                    <a class="navigation-link" href="#">About</a>
+                </li>
+            </div>
+            <div>
+                <button
+                    class="hidden lg:block text-sm text-white font-normal font-catchyMelody py-2 px-6 bg-[#F4961D] rounded-[100px]"
+                    type="submit">LOG IN</button>
+            </div>
+        </div>
+    </div>
+    <!-- End of Navigation section -->
+
+    <!-- Start of Header section -->
+    <div class="3xl:container mx-auto">
+        <div class="flex flex-col gap-6 md:gap-10 lg:flex-row mx-4 lg:mx-14 mt-16 lg:mt-20 mb-10">
+            <div class="flex flex-col items-center lg:items-start gap-4 md:gap-6 lg:gap-8 w-ful lg:w-[55%]">
+                <div class="lg:order-1 order-2">
+                    <button class="secondary-btn" type="submit">CodeKids</button>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h1>The
+                        <div class="relative inline">
+                            <img class="absolute top-[-50px] right-[-40px]"
+                                src="./images/header-section__shining-image.svg" alt="Shining image">
+                            <img class="absolute left-1 top-[20px] md:top-[30px] lg:top-[40px]"
+                                src="./images/header-section__bottom-line__image.svg" alt="Bottom line image">
+                            <span class="text-customBlue">Fastest</span> & <span class="text-customOrange">Easiest
+                                Way</span>
+                        </div>
+                        <br> for Kids to Build, Test, and <br> Launch Crazy Fun Online Games!
+                    </h1>
+                </div>
+                <div class="flex flex-col gap-3 order-3">
+                    <p class="text-2xs md:text-sm font-normal font-mulish">CodeKids is for:</p>
+                    <div
+                        class="grid grid-cols-[auto_auto] gap-2 py-2 md:py-4 px-3 md:px-6 rounded-xl md:rounded-[20px] border border-dashed border-customOrange shadow-orange-bottom-left bg-[#F4961D1A] max-w-[430px]">
+                        <div class="header__card-item">
+                            <img src="./images/header-section__icon-1.svg" alt="Icon image">
+                            <span class="header__card-info">Kids and Families</span>
+                        </div>
+                        <div class="header__card-item">
+                            <img src="./images/header-section__icon-2.svg" alt="Icon image">
+                            <span class="header__card-info">Schools and libraries</span>
+                        </div>
+                        <div class="header__card-item">
+                            <img src="./images/header-section__icon-3.svg" alt="Icon image">
+                            <span class="header__card-info">Homeschool</span>
+                        </div>
+                        <div class="header__card-item">
+                            <img src="./images/header-section__icon-4.svg" alt="Icon image">
+                            <span class="header__card-info">Game Engine Partners</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-4">
+                    <button class="primary-btn" type="submit">Sign Up for Free to Try out A CodingKit</button>
+                </div>
+            </div>
+            <div class="mx-6 lg:mx-3 w-3/4 lg:w-[45%]">
+                <img src="./images/header-section__main-image.svg" alt="Main image">
+            </div>
+        </div>
+    </div>
+    <!-- End of Header section -->
+
+    <!-- Start of About section -->
+    <div class="bg-customOrange mt-20">
+        <div class="w-full">
+            <img class="w-full" src="./images/about-section__background-top-image.svg" alt="Background top image">
+        </div>
+        <div class="3xl:container mx-auto">
+            <div class="flex flex-col gap-20">
+                <div class="flex flex-col gap-4 items-center mx-12 py-12">
+                    <div>
+                        <button class="secondary-btn" type="submit">About CodeKids</button>
+                    </div>
+                    <h2 class="max-w-[1000px] text-white">CodeKids is <span class="text-customBlue">real coding</span>
+                        and <span class="text-customBlue">game development</span> for anyone.</h2>
+                    <p class="max-w-[350px] lg:max-w-[465px] text-white text-center">Each level introduces a new
+                        computer science concept
+                        with a set of crazyfun app projects that come every month!</p>
+                    <div>
+                        <button class="primary-btn" type="submit">Sign Up for Free to Try out A CodingKit</button>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-20 z-10 mx-4">
+                    <div class="relative -top-16 hidden md:block">
+                        <img class="absolute left-1/3" src="./images/about-section__earth-image.png" alt="Earth image">
+                        <img class="absolute right-1/3" src="./images/about-section__blackboard-image.svg"
+                            alt="Blackboard image">
+                    </div>
+                    <div class="flex justify-center gap-6 md:gap-0 md:justify-around">
+                        <div
+                            class="relative bottom-14 md:bottom-40 md:left-6 w-1/12 md:w-[100px] lg:w-[150px] xl:w-fit">
+                            <img class="absolute -top-14 -left-10 hidden md:block"
+                                src="./images/about-section__text-coordinates.svg" alt="Text image">
+                            <img src="./images/about-section__kid-image-1.svg" alt="Kid image">
+                        </div>
+                        <div class="relative -top-5 md:top-0 w-1/12 md:w-[100px] lg:w-[150px] xl:w-fit">
+                            <img class="absolute md:-right-8 md:-top-10 lg:-right-10 lg:-top-14 hidden md:block"
+                                src="./images/about-section__text-variables.svg" alt="Text image">
+                            <img src="./images/about-section__kid-image-2.svg" alt="Kid image">
+                        </div>
+                        <div class="relative -top-14 md:-top-16 w-1/12 md:w-[100px] lg:w-[150px] xl:w-fit">
+                            <img class="absolute md:-top-14 md:-right-2 lg:-top-20 xl:-top-24 lg:-right-4 hidden md:block"
+                                src="./images/about-section__text-conditional.svg" alt="Text image">
+                            <img src="./images/about-section__kid-image-3.svg" alt="Text image">
+                        </div>
+                        <div class="relative -top-5 md:top-0 w-1/12 md:w-[100px] lg:w-[150px] xl:w-fit">
+                            <img class="absolute md:-top-10 md:-right-8 lg:-top-14 lg:-right-10 hidden md:block"
+                                src="./images/about-section__text-variables.svg" alt="Text image">
+                            <img src="./images/about-section__kid-image-2.svg" alt="Kid image">
+                        </div>
+                        <div class="relative -top-14 md:-top-36 w-1/12 md:w-[100px] lg:w-[150px] xl:w-fit">
+                            <img class="absolute md:-top-12 md:-left-10 lg:-top-16 hidden md:block"
+                                src="./images/about-section__text-conditional-2.svg" alt="Text image">
+                            <img src="./images/about-section__kid-image-3.svg" alt="Text image">
+                        </div>
+                    </div>
+                    <div class="hidden md:block relative -top-24">
+                        <img class="absolute left-12" src="./images/about-section__laptop-image.svg" alt="Laptop image">
+                        <img class="absolute left-1/2" src="./images/about-section__pencil-image.svg"
+                            alt="Pencil image">
+                        <img class="absolute right-32" src="./images/about-section__apple-image.svg" alt="Apple">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="3xl:container mx-auto w-full relative hidden lg:block">
+        <img class="absolute w-full bottom-28" src="./images/about-section__background-dashed-line-image.svg"
+            alt="Dashed line">
+    </div>
+    <div class="w-full mx-auto">
+        <img class="w-full" src="./images/about-section__background-bottom-image.svg" alt="Bottom image">
+    </div>
+    <!-- End of About section -->
+
+    <!-- Start of FAQs section -->
+    <div class="3xl:container mx-auto mt-8 lg:mt-10">
+        <div class="flex flex-col gap-8 md:gap-12 lg:gap-20 md:mx-10 xl:mx-20">
+            <h2 class="text-center"><span class="text-customBlue">Code</span><span class="text-customOrange">Kids</span>
+                ina nutshell</h2>
+            <!--.......................................................................-->
+            <div class="faq-section__card justify-start">
+                <div class="relative md:w-fit w-1/2 order-2 md:order-1">
+                    <img class="absolute md:-top-8 md:-left-8 -top-4 -left-4 lg:w-fit md:w-20 w-12"
+                        src="./images/card-1-top-image.svg" alt="Top image">
+                    <img src="./images/card-1-main-image.svg" alt="Main image">
+                    <img class="absolute bottom-0 lg:-right-20 md:-right-12 -right-6 lg:w-fit md:w-32 w-16"
+                        src="./images/card-1-bottom-image.svg" alt="Bottom image">
+                </div>
+                <div class="relative order-1 md:order-2 mx-16 md:mx-0 text-center md:text-left">
+                    <h3><span class="text-customOrange">Why</span> should kids learn to code?</h3>
+                    <p class="max-w-[418px]">Each level introduces a new computer science concept with a set of crazyfun
+                        app projects that come every month!</p>
+                    <img class="absolute -top-48 -right-24 hidden xl:inline-block"
+                        src="./images/card-1__dashed-line.svg" alt="Dashed line">
+                </div>
+            </div>
+            <!--.............................................................................-->
+            <div class="faq-section__card justify-end">
+                <div class="relative mx-16 md:mx-0 text-center md:text-left">
+                    <h3><span class="text-customOrange">What</span> is CodeKids?</h3>
+                    <p class="max-w-[418px]">Each level introduces a new computer science concept with a set of crazyfun
+                        app projects that come every month!</p>
+                    <img class="absolute -left-56 top-28 hidden xl:inline-block" src="./images/card-2__dashed-line.svg"
+                        alt="Dashed line">
+                </div>
+                <div class="relative md:w-fit w-1/2">
+                    <img class="absolute lg:-right-10 lg:-top-10 -right-6 -top-6 lg:w-fit w-10 md:w-12"
+                        src="./images/card-2-top-image.svg" alt="Top image">
+                    <img src="./images/card-2-main-image.svg" alt="Main image">
+                    <img class="absolute bottom-0 -left-10 md:-left-20 lg:-left-32 lg:w-fit w-16 md:w-28"
+                        src="./images/card-2-bottom-image.svg" alt="Bottom image">
+                </div>
+            </div>
+            <!--.............................................................................-->
+        </div>
+    </div>
+    <!-- End of FAQs section -->
+
+    <!-- Start of How it works section -->
+    <div class="w-full mt-2">
+        <img class="w-full" src="./images/background__top-image-2.svg" alt="Background top image">
+    </div>
+    <div class="bg-customCream">
+        <div class="3xl:container mx-auto">
+            <div class="flex flex-col gap-8 items-center py-5 xl:mx-5 mx-8">
+                <h2>How it <span class="text-customBlue">works</span></h2>
+                <div class="items-center hidden md:flex w-8/12">
+                    <span class="card-number">1</span>
+                    <span class="flex-grow h-1 bg-customOrange"></span>
+                    <span class="card-number">2</span>
+                    <span class="flex-grow h-1 bg-customOrange"></span>
+                    <span class="card-number">3</span>
+                </div>
+                <div class="flex md:flex-row flex-col items-center gap-8 lg:mx-6">
+                    <!--....................................................................-->
+                    <div class="how-it-works-section__card">
+                        <div class="rounded-xl">
+                            <img src="./images/card-image-1.svg" alt="Card image">
+                        </div>
+                        <h4 class="w-3/4"><span class="text-customOrange">Kids look through</span> the materials and
+                            pick an app.</h4>
+                        <p class="text-center">Every box comes with a mix of coding projects, ranging from simple to
+                            more advanced.</p>
+                    </div>
+                    <!--......................................................................-->
+                    <div class="how-it-works-section__card">
+                        <div class="rounded-xl">
+                            <img src="./images/card-image-2.svg" alt="Card image">
+                        </div>
+                        <h4 class="w-3/4">Kids type the app into the <span class="text-customOrange">CodeKids
+                                website.</span></h4>
+                        <p class="text-center">Every box comes with a mix of coding projects, ranging from simple to
+                            more advanced.</p>
+                    </div>
+                    <!--.......................................................................-->
+                    <div class="how-it-works-section__card">
+                        <div class="rounded-xl">
+                            <img src="./images/card-image-1.svg" alt="Card image">
+                        </div>
+                        <h4 class="w-3/4">Kids use and share their apps on <span class="text-customOrange">any mobile
+                                device.</span></h4>
+                        <p class="text-center">Every box comes with a mix of coding projects, ranging from simple to
+                            more advanced.</p>
+                    </div>
+                    <!--........................................................................-->
+                </div>
+                <div>
+                    <button class="primary-btn" type="submit">Sign Up for Free to Try out A CodingKit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full bg-customOrange">
+        <img class="w-full" src="./images/background__bottom-image-2.svg" alt="Background bottom image">
+    </div>
+    <div class="3xl:container mx-auto relative w-full hidden lg:flex">
+        <img class="absolute bottom-0 lg:w-24 xl:w-fit left-0" src="./images/bottom-left__image.svg"
+            alt="Bottom left image">
+        <img class="absolute bottom-0 lg:w-40 xl:w-fit right-0" src="./images/bottom-right__image.svg"
+            alt="Bottom right image">
+    </div>
+    <!-- End of How it works section -->
+
+    <!-- Start of CodeKids way section -->
+    <div class="bg-customOrange">
+        <div class="3xl:container mx-auto">
+            <div class="flex flex-col relative items-center lg:gap-10 gap-6 py-16 mx-8">
+                <h2 class="text-white">Learn to code the <span class="text-customBlue">CodeKids</span> way</h2>
+                <div class="flex md:flex-row flex-col gap-8 lg:mx-6">
+                    <!--....................................................................-->
+                    <div class="codekids-way-section__card">
+                        <div class="rounded-xl">
+                            <img src="./images/codekids-way__card-image-1.svg" alt="Card image">
+                        </div>
+                        <h4 class="w-3/4">Code is a language</h4>
+                        <p class="text-center">Learning to program is just like learning any language. The earlier you
+                            start, the easier it is. <span class="text-customBlue font-bold">Kids can use CodeKids as
+                                soon as they can read and write.</span></p>
+                    </div>
+                    <!--......................................................................-->
+                    <div class="codekids-way-section__card">
+                        <div class="rounded-xl">
+                            <img src="./images/codekids-way__card-image-2.svg" alt="Card image">
+                        </div>
+                        <h4 class="w-3/4">Short and sweet</h4>
+                        <p class="text-center">If you want your kid to learn guitar, you don't start with Rock Band.
+                            <span class="text-customBlue font-bold">You start with a smaller guitar.</span> CodeKids
+                            uses simple commands to create cool apps that really work.
+                        </p>
+                    </div>
+                    <!--.......................................................................-->
+                    <div class="codekids-way-section__card">
+                        <div class="rounded-xl">
+                            <img src="./images/codekids-way__card-image-3.svg" alt="Card image">
+                        </div>
+                        <h4 class="w-3/4">Monkey see, monkey do</h4>
+                        <p class="text-center">Most people learn hard things by <span
+                                class="text-customBlue font-bold">imitation and repetition.</span> With CodeKids, kids
+                            learn to program by copying apps and making them their own.</p>
+                    </div>
+                    <!--........................................................................-->
+                </div>
+                <div class="relative z-10">
+                    <button class="primary-btn" type="submit">Sign Up for Free to Try out A CodingKit</button>
+                </div>
+                <img class="w-1/5 absolute -bottom-4 left-28 hidden xl:inline-block"
+                    src="./images/card-2__dashed-line.svg" alt="Dashed line">
+                <img class="absolute bottom-4 right-96 hidden xl:inline-block"
+                    src="./images/codekids-section__dashed-line.svg" alt="Dashed line">
+                <img class="absolute bottom-0 right-72 hidden xl:inline-block"
+                    src="./images/codekids-section__plane-image.svg" alt="Plane image">
+            </div>
+        </div>
+    </div>
+    <div class="w-full bg-customBlue">
+        <img class="w-full" src="./images/codekids-way__background-bottom-image.svg" alt="Background bottom image">
+    </div>
+    <!-- End of CodeKids way section -->
+
+    <!-- Start of CodeKids right for your kid section -->
+    <div class="bg-customBlue">
+        <div class="3xl:container mx-auto">
+            <div class="flex flex-col items-center md:gap-16 gap-10 py-16">
+                <div class="flex flex-col items-center gap-6">
+                    <h2 class="text-white">Is <span class="text-customOrange">Codekids</span> right for your kid?</h2>
+                    <p class="md:max-w-[418px] max-w-[250px] text-center text-white">Over a million kids have built apps
+                        on our website,
+                        and we have subscribers in over 70 countries.</p>
+                </div>
+                <div class="flex md:flex-row gap-4 items-center mx-5 flex-col justify-evenly w-full">
+                    <div class="relative z-10 md:max-w-[310px] max-w-48">
+                        <img src="./images/right-for-you__card-1.svg" alt="Card image">
+                    </div>
+                    <div class="relative z-10 md:max-w-[310px] max-w-48">
+                        <img src="./images/right-for-you__card-2.svg" alt="Card image">
+                    </div>
+                    <div class="relative z-10 md:max-w-[310px] max-w-48">
+                        <img src="./images/right-for-you__card-3.svg" alt="Card image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full flex justify-center">
+            <img class="absolute w-full bottom-40 3xl:w-fit hidden xl:block"
+                src="./images/right-for-you__dashed-line.svg" alt="Dashed line">
+        </div>
+        <div class="bg-customBlue w-full">
+            <img class="w-full" src="./images/right-for-you__bottom-image.svg" alt="Bottom image">
+        </div>
+    </div>
+    <!-- End of CodeKids right for your kid section -->
+
+    <!-- Start of Testimonials section -->
+    <div class="3xl:container mx-auto pb-12 pt-2 md:py-24">
+        <h2 class="text-center py-10">What <span class="text-customOrange">Parents</span> Say About us</h2>
+        <div class="relative hidden lg:block">
+            <img class="absolute left-0 bottom-0" src="./images/testimonials__left-kid-image.svg" alt="Kid image">
+            <img class="absolute right-0 bottom-0" src="./images/testimonials__right-kid-image.svg" alt="Kid image">
+        </div>
+        <div class="flex flex-col gap-4 lg:gap-8">
+            <!--............................................................-->
+            <div class="w-full overflow-x-scroll direction-rtl">
+                <div class="flex gap-3 lg:gap-6 w-fit px-2 pb-1 animate-leftToRight">
+                    <div class="testimonials-section__blue-card">
+                        <img class="w-16 lg:w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-1 lg:gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__orange-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image-2.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__blue-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__orange-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image-2.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__blue-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__orange-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image-2.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__blue-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__orange-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image-2.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__blue-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__orange-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image-2.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--..........................................................-->
+            <div class="w-full overflow-x-scroll">
+                <div class="flex gap-3 lg:gap-6 w-fit h-auto px-2 pb-1 animate-rightToLeft">
+                    <div class="testimonials-section__orange-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image-2.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__blue-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__orange-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image-2.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__blue-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__orange-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image-2.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan5</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__blue-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__orange-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image-2.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__blue-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__orange-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image-2.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>9Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__blue-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--...................................................................-->
+        </div>
+    </div>
+    <!-- End of Testimonials section -->
+
+    <!-- Start of Contact section -->
+    <div class="bg-customCream">
+        <div class="w-full">
+            <img class="w-full bg-customCream" src="./images/contact-section__top-image.svg" alt="Background top image">
+        </div>
+        <div class="3xl:container mx-auto">
+            <div class="flex flex-col xl:flex-row justify-between gap-8 mx-6 md:mx-16 py-10 md:py-24">
+                <div class="flex flex-col gap-5 items-center xl:items-start w-full xl:max-w-[526px]">
+                    <h2 class="xl:text-left"><span class="text-customBlue">Have any questions?</span> <span
+                            class="text-customOrange">contact
+                            us now.</span></h2>
+                    <p class="max-w-[250px] md:max-w-[400px] lg:max-w-[526px] xl:max-w-full text-center xl:text-left">
+                        Don't have Mac or iPad but would like to try our coding kit? Please let us know here and we will
+                        contact you with other options</p>
+                    <div class="w-60 md:w-fit">
+                        <img src="./images/contact-section__main-image.svg" alt="Main image">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 md:gap-6 w-full xl:w-1/2">
+                    <div class="flex flex-col gap-2">
+                        <label class="text-xs md:text-base" for="name">Your name <span
+                                class="text-red-500">*</span></label>
+                        <input class="info-input" type="text" name="name" id="name" placeholder="Type your name">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="text-xs md:text-base" for="email">Email <span
+                                class="text-red-500">*</span></label>
+                        <input class="info-input" type="email" name="email" id="email" placeholder="Type your email">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="text-xs md:text-base" for="message">Message <span
+                                class="text-red-500">*</span></label>
+                        <textarea class="info-input h-28 md:h-52" id="message"
+                            placeholder="Type your message"></textarea>
+                    </div>
+                    <button
+                        class="w-40 mx-auto md:w-full bg-customOrange text-white font-normal font-catchyMelody uppercase rounded-full text-2xs md:text-sm py-2 px-4"
+                        type="submit">submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Contact section -->
+
+    <!-- Start of Footer section -->
+    <div class="bg-[#102755]">
+        <div class="w-full bg-customCream">
+            <img class="w-full" src="./images/footer-section__top-image.svg" alt="Top image">
+        </div>
+        <div class="3xl:container mx-auto">
+            <div
+                class="flex justify-around gap-14 items-start md:items-center mx-8 md:mx-16 xl:mr-32 pb-3 pt-10 md:pt-20">
+                <div class="lg:flex-col hidden lg:flex w-full">
+                    <img class="w-fit" src="./images/footer-section__logo-image.svg" alt="Logo image">
+                    <img class="w-fit" src="./images/footer-section__kid-image.svg" alt="a Kid image">
+                </div>
+                <div class="list-none flex flex-col md:flex-row gap-3 md:gap-20 w-full xl:gap-20 md:items-center ">
+                    <div class="flex flex-col gap-3">
+                        <h6>CodeKids</h6>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Homeschool</a>
+                        </li>
+                        <li>
+                            <a href="#">Projects</a>
+                        </li>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <li>
+                            <a href="#">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 relative w-full justify-evenly">
+                    <h6>Contact Information</h6>
+                    <div class="flex gap-2 items-center">
+                        <img src="./images/footer__location-icon.svg" alt="Location icon">
+                        <p class="text-white md:text-base text-sm max-w-[236px] sm:max-w-full">Dorem ipsum dolor sit
+                            amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="./images/footer__call-icon.svg" alt="Call icon">
+                        <p class="text-white md:text-base text-sm">123 123 123</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="./images/footer__mail-icon.svg" alt="Mail icon">
+                        <p class="text-white md:text-base text-sm">codekids@gmail.com</p>
+                    </div>
+                    <img class="absolute -bottom-20 -right-20 hidden xl:block"
+                        src="./images/footer-section__dashed-line.svg" alt="Dashed line">
+                </div>
+            </div>
+            <div
+                class="flex flex-col sm:flex-row text-white gap-4 sm:justify-between mx-8 md:mx-16 py-6 sm:py-10 border-t-2 border-t-customBlue">
+                <p class="text-sm md:text-base">2024 © CodeKids Copy Right</p>
+                <div class="flex flex-row justify-between gap-8 list-none">
+                    <li>
+                        <a href="#">Terms of Service</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
