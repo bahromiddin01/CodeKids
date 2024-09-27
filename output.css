@@ -2056,6 +2056,10 @@ li {
   width: 100%;
 }
 
+.w-\[50px\] {
+  width: 50px;
+}
+
 .max-w-2 {
   max-width: 0.5rem;
 }
