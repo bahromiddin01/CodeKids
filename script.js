@@ -84,14 +84,20 @@ const menuIcon = document.querySelectorAll('.menuIcon');
 const menuModal = document.querySelectorAll('.menuModal');
 const exitMenu = document.querySelectorAll('.exitMenu');
 
-menuIcon.forEach(function (icon) {
-    icon.addEventListener('click', () => {
-        menuModal.forEach(e => e.style.display = 'flex')
+menuIcon.forEach(function (element) {
+    element.addEventListener('click', () => {
+        menuModal.forEach((e) => {
+            e.style.transform = 'translateX(0)'
+            e.style.transition = 'transform 0.8s ease'
+        })
     });
 });
 
 exitMenu.forEach(function (exit) {
     exit.addEventListener('click', () => {
-        menuModal.forEach(e => e.style.display = 'none')
+        menuModal.forEach((e) => {
+            e.style.transform = 'translateX(100%)'
+            e.style.transition = 'transform 0.8s ease'
+        })
     });
 });

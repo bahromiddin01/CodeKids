@@ -131,11 +131,11 @@
     }
 
     .menuModal {
-        @apply hidden fixed top-0 left-0 w-screen h-screen justify-end bg-[#24242426] backdrop-blur-sm z-50
+        @apply flex translate-x-full fixed top-0 left-0 w-screen h-screen justify-end bg-[#24242426] backdrop-blur-sm z-50
     }
 
     .menuModal div {
-        @apply flex flex-col self-start gap-1 relative top-8 right-8 w-32 py-5 px-2 rounded-2xl border-2 border-dashed border-customOrange font-catchyMelody text-customOrange bg-white
+        @apply flex flex-col self-start gap-1 relative top-8 right-8 translate-x-0 w-32 py-5 px-2 rounded-2xl border-2 border-dashed border-customOrange font-catchyMelody text-customOrange bg-white
     }
 
     .exitMenu {
