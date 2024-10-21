@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./input.css">
     <link rel="stylesheet" href="./output.css">
+    <script src="./script.js" defer></script>
     <title>CodeKids</title>
 </head>
 
@@ -20,34 +21,75 @@
         <div class="flex justify-between items-center lg:ml-10 lg:mr-16 mx-6 mt-4">
             <div class="flex items-center justify-between w-full lg:w-fit">
                 <img src="./images/navigation__logo-image.svg" alt="Logo image">
-                <i class="fa-solid fa-bars lg:hidden text-lg text-[#f4961d]"></i>
+                <i class="fa-solid fa-bars menuIcon"></i>
             </div>
             <div class="list-none hidden lg:flex items-center gap-10">
                 <li class="relative">
-                    <img src="./images/navigation__link-background__image.svg" alt="Link background image">
-                    <a class="absolute top-[10px] navigation-link text-black" href="#">Home</a>
+                    <img class="absolute -z-10 -top-2" src="./images/navigation__link-background__image.svg"
+                        alt="Link background image">
+                    <a class="navigation-link text-black" href="./home.html">Home</a>
                 </li>
                 <li>
-                    <a class="navigation-link" href="#">Homeschool</a>
+                    <a class="navigation-link" href="./homeschool.html">Homeschool</a>
                 </li>
                 <li>
-                    <a class="navigation-link" href="#">Pricing</a>
+                    <a class="navigation-link" href="./pricing.html">Pricing</a>
                 </li>
                 <li>
-                    <a class="navigation-link" href="#">FAQs</a>
+                    <a class="navigation-link" href="./faqs.html">FAQs</a>
                 </li>
                 <li>
-                    <a class="navigation-link" href="#">Contact</a>
+                    <a class="navigation-link" href="./contact.html">Contact</a>
                 </li>
                 <li>
-                    <a class="navigation-link" href="#">About</a>
+                    <a class="navigation-link" href="./about.html">About</a>
                 </li>
             </div>
-            <div>
-                <button
-                    class="hidden lg:block text-sm text-white font-normal font-catchyMelody py-2 px-6 bg-[#F4961D] rounded-[100px]"
-                    type="submit">LOG IN</button>
+            <!--##############################################################################################-->
+            <div class="menuModal">
+                <div>
+                    <i class="fa-solid fa-arrow-right exitMenu"></i>
+                    <li class="mt-4">
+                        <a href="./home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./homeschool.html">Homeschool</a>
+                    </li>
+                    <li>
+                        <a href="./pricing.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="./faqs.html">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+                </div>
             </div>
+            <!--######################################################################################################-->
+            <button id="loginBtn" type="submit">LOG IN</button>
+            <!--..........................................................................................-->
+            <div class="logInModal">
+                <div>
+                    <i class="fa-solid fa-xmark exitLogIn"></i>
+                    <img src="./images/login-page__main-image.svg" alt="">
+                    <div>
+                        <p>Log In</p>
+                        <button class="loginWithGoogle">
+                            <img src="./images/login-page__google-icon.svg" alt="">
+                            <p>Log in with google</p>
+                        </button>
+                        <button class="loginWithApple">
+                            <img src="./images/login-page__apple-icon.svg" alt="">
+                            <p>Log in with apple</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--...................................................................................................-->
         </div>
     </div>
     <!-- End of Navigation section -->
@@ -57,7 +99,7 @@
         <div class="flex flex-col gap-6 md:gap-10 lg:flex-row mx-4 lg:mx-14 mt-16 lg:mt-20 mb-10">
             <div class="flex flex-col items-center lg:items-start gap-4 md:gap-6 lg:gap-8 w-ful lg:w-[55%]">
                 <div class="lg:order-1 order-2">
-                    <button class="secondary-btn" type="submit">CodeKids</button>
+                    <div class="secondary-btn">CodeKids</div>
                 </div>
                 <div class="order-1 lg:order-2">
                     <h1>The
@@ -95,7 +137,36 @@
                     </div>
                 </div>
                 <div class="order-4">
-                    <button class="primary-btn" type="submit">Sign Up for Free to Try out A CodingKit</button>
+                    <button class="signUpBtn primary-btn" type="submit">Sign Up for Free to Try out A CodingKit</button>
+                    <!--...........................................................................................-->
+                    <div
+                        class="signUpModal fixed bg-[#24242426] w-screen h-screen left-0 z-50 top-0 hidden items-center justify-center backdrop-blur-sm">
+                        <div class="sm:flex sm:items-center relative sm:gap-12 bg-white sm:p-10 p-0 rounded-3xl">
+                            <i
+                                class="fa-solid fa-xmark exitSignUp absolute top-2 right-2 lg:top-6 lg:right-6 text-lg lg:text-2xl hover:bg-gray-100 px-2 rounded-md"></i>
+                            <img class="hidden md:inline-block w-40 lg:w-fit"
+                                src="./images/sign-in-page__main-image.svg" alt="">
+                            <div
+                                class="flex flex-col items-center gap-3 bg-customCream lg:p-7 p-4 rounded-3xl lg:border-dashed border-customOrange border-2 shadow-bottom-left-orange">
+                                <p class="text-base lg:text-xl font-normal font-catchyMelody text-customBlue">Sign Up
+                                </p>
+                                <button
+                                    class="continueWithGoogle flex items-center gap-1 bg-customBlue lg:py-3 lg:px-14 py-1 px-6 rounded-full">
+                                    <img src="./images/login-page__google-icon.svg" alt="">
+                                    <p class="text-sm lg:text-base uppercase font-catchyMelody text-white">Continue with
+                                        google</p>
+                                </button>
+                                <button
+                                    class="continueWithApple flex items-center gap-1 border-customBlue border-2 lg:py-3 lg:px-14 py-1 px-6 rounded-full bg-white">
+                                    <img src="./images/login-page__apple-icon.svg" alt="">
+                                    <p class="text-sm lg:text-base uppercase font-catchyMelody text-customBlue">Continue
+                                        with apple
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--..................................................................................................-->
                 </div>
             </div>
             <div class="mx-6 lg:mx-3 w-3/4 lg:w-[45%]">
@@ -114,7 +185,7 @@
             <div class="flex flex-col gap-20">
                 <div class="flex flex-col gap-4 items-center mx-12 py-12">
                     <div>
-                        <button class="secondary-btn" type="submit">About CodeKids</button>
+                        <div class="secondary-btn">About CodeKids</div>
                     </div>
                     <h2 class="max-w-[1000px] text-white">CodeKids is <span class="text-customBlue">real coding</span>
                         and <span class="text-customBlue">game development</span> for anyone.</h2>
@@ -122,7 +193,8 @@
                         computer science concept
                         with a set of crazyfun app projects that come every month!</p>
                     <div>
-                        <button class="primary-btn" type="submit">Sign Up for Free to Try out A CodingKit</button>
+                        <button class="signUpBtn primary-btn" type="submit">Sign Up for Free to Try out A
+                            CodingKit</button>
                     </div>
                 </div>
                 <div class="flex flex-col gap-20 z-10 mx-4">
@@ -271,7 +343,7 @@
                     <!--........................................................................-->
                 </div>
                 <div>
-                    <button class="primary-btn" type="submit">Sign Up for Free to Try out A CodingKit</button>
+                    <button class="signUpBtn primary-btn" type="submit">Sign Up for Free to Try out A CodingKit</button>
                 </div>
             </div>
         </div>
@@ -327,7 +399,7 @@
                     <!--........................................................................-->
                 </div>
                 <div class="relative z-10">
-                    <button class="primary-btn" type="submit">Sign Up for Free to Try out A CodingKit</button>
+                    <button class="signUpBtn primary-btn" type="submit">Sign Up for Free to Try out A CodingKit</button>
                 </div>
                 <img class="w-1/5 absolute -bottom-4 left-28 hidden xl:inline-block"
                     src="./images/card-2__dashed-line.svg" alt="Dashed line">
@@ -569,30 +641,6 @@
                             <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
                                 heals.
                                 He's spending lots of time on CodeKids code.</p>
-                            <h5>Hilary Grant, Michigan5</h5>
-                        </div>
-                    </div>
-                    <div class="testimonials-section__blue-card">
-                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
-                        <div class="flex flex-col gap-2">
-                            <div class="hidden lg:block">
-                                <img src="./images/testimonials__icon-image.svg" alt="Icon image">
-                            </div>
-                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
-                                heals.
-                                He's spending lots of time on CodeKids code.</p>
-                            <h5>Hilary Grant, Michigan</h5>
-                        </div>
-                    </div>
-                    <div class="testimonials-section__orange-card">
-                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
-                        <div class="flex flex-col gap-2">
-                            <div class="hidden lg:block">
-                                <img src="./images/testimonials__icon-image-2.svg" alt="Icon image">
-                            </div>
-                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
-                                heals.
-                                He's spending lots of time on CodeKids code.</p>
                             <h5>Hilary Grant, Michigan</h5>
                         </div>
                     </div>
@@ -617,7 +665,31 @@
                             <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
                                 heals.
                                 He's spending lots of time on CodeKids code.</p>
-                            <h5>9Hilary Grant, Michigan</h5>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__blue-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
+                        </div>
+                    </div>
+                    <div class="testimonials-section__orange-card">
+                        <img class="w-fit" src="./images/testimonials__card-image.svg" alt="Card image">
+                        <div class="flex flex-col gap-2">
+                            <div class="hidden lg:block">
+                                <img src="./images/testimonials__icon-image-2.svg" alt="Icon image">
+                            </div>
+                            <p>Wow! Thank you so much! My son had surgery, so he's on very limited activity while he
+                                heals.
+                                He's spending lots of time on CodeKids code.</p>
+                            <h5>Hilary Grant, Michigan</h5>
                         </div>
                     </div>
                     <div class="testimonials-section__blue-card">
@@ -657,27 +729,48 @@
                         <img src="./images/contact-section__main-image.svg" alt="Main image">
                     </div>
                 </div>
-                <div class="flex flex-col gap-3 md:gap-6 w-full xl:w-1/2">
+                <form action="#" id="form" class="flex flex-col gap-3 md:gap-6 w-full xl:w-1/2">
                     <div class="flex flex-col gap-2">
                         <label class="text-xs md:text-base" for="name">Your name <span
                                 class="text-red-500">*</span></label>
-                        <input class="info-input" type="text" name="name" id="name" placeholder="Type your name">
+                        <input class="info-input" type="text" name="name" id="name" placeholder="Type your name"
+                            required>
                     </div>
                     <div class="flex flex-col gap-2">
                         <label class="text-xs md:text-base" for="email">Email <span
                                 class="text-red-500">*</span></label>
-                        <input class="info-input" type="email" name="email" id="email" placeholder="Type your email">
+                        <input class="info-input" type="email" name="email" id="email" placeholder="Type your email"
+                            required>
                     </div>
                     <div class="flex flex-col gap-2">
                         <label class="text-xs md:text-base" for="message">Message <span
                                 class="text-red-500">*</span></label>
-                        <textarea class="info-input h-28 md:h-52" id="message"
-                            placeholder="Type your message"></textarea>
+                        <textarea class="info-input h-28 md:h-52" id="message" placeholder="Type your message"
+                            required></textarea>
                     </div>
-                    <button
+                    <button id="submitBtn"
                         class="w-40 mx-auto md:w-full bg-customOrange text-white font-normal font-catchyMelody uppercase rounded-full text-2xs md:text-sm py-2 px-4"
                         type="submit">submit</button>
+                </form>
+                <!--...............................................................................................-->
+                <div
+                    class="submitModal fixed bg-[#24242426] w-screen h-screen left-0 z-50 top-0 hidden items-center justify-center backdrop-blur-sm">
+                    <div class="relative bg-white p-10 md:p-20 rounded-3xl">
+                        <i
+                            class="fa-solid fa-xmark exitSubmit absolute top-3 right-3 md:top-6 md:right-6 text-lg md:text-2xl hover:bg-gray-100 px-2 rounded-md"></i>
+                        <img class="absolute bottom-0 left-0 md:w-fit w-24" src="./images/submit__dashed-line.svg"
+                            alt="">
+                        <div class="flex flex-col gap-0.5 md:gap-4">
+                            <p class="text-lg md:text-4xl font-catchyMelody text-customBlue uppercase text-center">
+                                Submitted successfully!</p>
+                            <p class="text-base md:text-2xl font-catchyMelody text-customOrange uppercase text-center">
+                                We will contact you soon.</p>
+                        </div>
+                        <img class="absolute bottom-4 right-4 md:w-24 w-10"
+                            src="./images/codekids-section__plane-image.svg" alt="Plane image">
+                    </div>
                 </div>
+                <!--........................................................................................-->
             </div>
         </div>
     </div>
@@ -696,24 +789,24 @@
                     <img class="w-fit" src="./images/footer-section__kid-image.svg" alt="a Kid image">
                 </div>
                 <div class="list-none flex flex-col md:flex-row gap-3 md:gap-20 w-full xl:gap-20 md:items-center ">
-                    <div class="flex flex-col gap-3">
+                    <div class="flex flex-col gap-3 list-parent">
                         <h6>CodeKids</h6>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="./home.html">Home</a>
                         </li>
                         <li>
-                            <a href="#">Homeschool</a>
+                            <a href="./homeschool.html">Homeschool</a>
                         </li>
                         <li>
-                            <a href="#">Projects</a>
+                            <a href="./projects.html">Projects</a>
                         </li>
                     </div>
-                    <div class="flex flex-col gap-3">
+                    <div class="flex flex-col gap-3 list-parent">
                         <li>
-                            <a href="#">FAQs</a>
+                            <a href="./faqs.html">FAQs</a>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a href="./about.html">About</a>
                         </li>
                     </div>
                 </div>
@@ -739,7 +832,7 @@
             <div
                 class="flex flex-col sm:flex-row text-white gap-4 sm:justify-between mx-8 md:mx-16 py-6 sm:py-10 border-t-2 border-t-customBlue">
                 <p class="text-sm md:text-base">2024 © CodeKids Copy Right</p>
-                <div class="flex flex-row justify-between gap-8 list-none">
+                <div class="flex flex-row justify-between gap-8 list-none list-parent">
                     <li>
                         <a href="#">Terms of Service</a>
                     </li>

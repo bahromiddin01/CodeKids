@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="./output.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <div class="flex justify-between items-center lg:ml-10 lg:mr-16 mx-6 mt-4">
+            <div class="flex items-center justify-between w-full lg:w-fit">
+                <img src="./images/navigation__logo-image.svg" alt="Logo image">
+                <i class="fa-solid fa-bars menuIcon"></i>
+            </div>
+            <div class="list-none hidden lg:flex items-center gap-10">
+                <li>
+                    <a class="navigation-link" href="./home.html">Home</a>
+                </li>
+                <li>
+                    <a class="navigation-link" href="./homeschool.html">Homeschool</a>
+                </li>
+                <li>
+                    <a class="navigation-link" href="./pricing.html">Pricing</a>
+                </li>
+                <li>
+                    <a class="navigation-link" href="./faqs.html">FAQs</a>
+                </li>
+                <li class="relative">
+                    <img class="absolute -z-10 -top-2 left-3" src="./images/navigation__link-background__image.svg"
+                        alt="Link background image">
+                    <a class="navigation-link text-black" href="./contact.html">Contact</a>
+                </li>
+                <li>
+                    <a class="navigation-link" href="./about.html">About</a>
+                </li>
+            </div>
+            <div>
+                <!--##############################################################################################-->
+                <div class="menuModal">
+                    <div>
+                        <i class="fa-solid fa-arrow-right exitMenu"></i>
+                        <li class="mt-4">
+                            <a href="./home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./homeschool.html">Homeschool</a>
+                        </li>
+                        <li>
+                            <a href="./pricing.html">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="./faqs.html">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About</a>
+                        </li>
+                    </div>
+                </div>
+                <!--######################################################################################################-->
+                <button id="loginBtn" type="submit">LOG IN</button>
+                <!--..........................................................................................-->
+                <div class="logInModal">
+                    <div>
+                        <i class="fa-solid fa-xmark exitLogIn"></i>
+                        <img src="./images/login-page__main-image.svg" alt="">
+                        <div>
+                            <p>Log In</p>
+                            <button class="loginWithGoogle">
+                                <img src="./images/login-page__google-icon.svg" alt="">
+                                <p>Log in with google</p>
+                            </button>
+                            <button class="loginWithApple">
+                                <img src="./images/login-page__apple-icon.svg" alt="">
+                                <p>Log in with apple</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--...................................................................................................-->
+            </div>
+        </div>
+    </div>
+    <h1 class="text-customBlue text-center mt-32">Contact page</h1>
+</body>
+
+</html>
