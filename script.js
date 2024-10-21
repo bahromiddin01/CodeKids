@@ -88,7 +88,7 @@ menuIcon.forEach(function (element) {
     element.addEventListener('click', () => {
         menuModal.forEach((e) => {
             e.style.transform = 'translateX(0)'
-            e.style.transition = 'transform 0.8s ease'
+            e.style.transition = 'transform 0.6s ease'
         })
     });
 });
@@ -97,7 +97,7 @@ exitMenu.forEach(function (exit) {
     exit.addEventListener('click', () => {
         menuModal.forEach((e) => {
             e.style.transform = 'translateX(100%)'
-            e.style.transition = 'transform 0.8s ease'
+            e.style.transition = 'transform 0.6s ease'
         })
     });
 });
